@@ -1,4 +1,4 @@
 # Barrierefreiheit Info
 
-Unser Repository mit Informationen zur Berrierefreiheit.
+Unser Repository mit Informationen zur Barrierefreiheit.
 
