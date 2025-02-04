@@ -1,1 +1,1 @@
-# barrierefreiheit-info
+# Barrierefreiheit Info
