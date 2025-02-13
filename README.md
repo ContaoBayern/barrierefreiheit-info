@@ -18,3 +18,6 @@ Unser Repository mit Informationen zur Barrierefreiheit.
 
 ```
 
+
+## Browsereinstellungen für Tastaturbedienbarkeit:
+Safari Tastaturbedienung aktivieren: Einstellungen "Entwickler" -> Tab "Erweitert" -> "Über Tabulator jedes Objekt auf einer Webiste hervorheben"
