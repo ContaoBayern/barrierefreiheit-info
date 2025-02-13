@@ -20,4 +20,6 @@ Unser Repository mit Informationen zur Barrierefreiheit.
 
 
 ## Browsereinstellungen für Tastaturbedienbarkeit:
+Chrome Tastaturbedienung aktivieren: in Chrome ist dies standardmäßig aktiviert
 Safari Tastaturbedienung aktivieren: Einstellungen "Entwickler" -> Tab "Erweitert" -> "Über Tabulator jedes Objekt auf einer Webiste hervorheben"
+Firefox (MAC): Firefox orientiert sich an den Systemeinstellungen. Systemeinstellung -> Tastatur -> "Tastaturnavigation" (Schieberegler)
