@@ -9,7 +9,6 @@ Unser Repository mit Informationen zur Barrierefreiheit.
 ## Diverses
 
 ```html
-<p>this is code</p>
 <span
   role="checkbox"
   aria-checked="false"
