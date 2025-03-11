@@ -3,7 +3,7 @@
 ## ARIA-Lösung bis C5.3
 
 Template anpassen:
-aria-label="<?= $this->name ?> hinzufügen. Der Name des Frontendmoduls wird als aria-label verwendet.
+`aria-label="<?= $this->name ?>` hinzufügen. Der Name des Frontendmoduls wird als aria-label verwendet.
 
 
 ```<!-- indexer::stop -->
