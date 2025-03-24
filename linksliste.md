@@ -146,6 +146,8 @@
 -   [IAAP - Zertifizierungen](https://iaap-dach.org/)
 -   [deque University](https://dequeuniversity.com/)
 -   [BITV Selbstbewertung](https://studio.bitvtest.de/)
+-   [Erklärung zur Barrierefreiheit - Beispiel](https://www.lf-barrierefreiheit-st.de/erklaerung-zur-barrierefreiheit)
+-   [Erstellungshilfe für die Erklärung zur Barrierefreiheit](https://www.lf-barrierefreiheit-st.de/digitales/webseiten/erstellungshilfe-fuer-die-erklaerung-zur-barrierefreiheit)
 
 # Webseiten mit interessanten Details
 
