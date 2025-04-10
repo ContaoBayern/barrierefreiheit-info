@@ -1,0 +1,21 @@
+// Im Standard nicht sichtbar bei Tastaturnavigation wird das Modul eingeblendet, wenn man per Tab in .mod_articlelist springt. 
+// Für eine bessere Tastaturnavigation um schneller zu einzelne Abschnitte zu gelangen
+
+.mod_articlelist#inhaltsverzeichnis {
+
+    &:not(:focus-within),
+    &:not(:focus-within) a{
+      clip: rect(0 0 0 0);
+      clip-path: inset(50%);
+      height: 1px;
+      overflow: hidden;
+      position: absolute;
+      white-space: nowrap;
+      width: 1px;
+    }
+    
+// optional
+    position: fixed;
+    right: 0;
+    z-index: 10;
+}
