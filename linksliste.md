@@ -171,3 +171,9 @@
 -   [Alistapart über ARIA](https://alistapart.com/article/the-accessibility-of-wai-aria/)
 -   [ARIA Support nach Browser und Screenreader](https://a11ysupport.io/)
 
+# Contao Webseiten die Barrierefreih umgesetzt wurden
+
+- https://www.digitalbarrierefrei.at/de/
+- https://demo.contao.org/
+
+
