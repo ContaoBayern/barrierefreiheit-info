@@ -24,6 +24,7 @@ Gestaltung:
 Wenn man den Button nicht anzeigen möchte, könnte man den Button mit clip ausblenden und bei fokus das clip wieder rausnehmen.  
 Beispiel:
 ```scss
+// alte Umsetzung / depricated
 .invisible {
 	border: 0;
 	clip: rect(0 0 0 0);
@@ -42,6 +43,7 @@ Beispiel:
 }
 ```
 ```scss
+// neuere Umsetzung
 .invisible {
             border: 0;
             clip-path: circle(0);
