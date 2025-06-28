@@ -1,0 +1,3 @@
+
+Area-Labels:
+area-labels sind nur für Elemente nicht nötig, wenn das HTML-Element selbst sprechend ist: z.B. main braucht kein seperates area-label, da es automtisch erkannt wird.
