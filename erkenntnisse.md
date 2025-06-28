@@ -1,4 +1,4 @@
-#1 Erkenntnisse
+# Erkenntnisse
 
 ## Semantik
 Aria-Labels:
