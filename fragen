@@ -5,3 +5,6 @@ Backend Navigationsmodul Bereich ARIA-Label kann nicht mit Contao Insert-Tags be
 Wenn man die Bezeichnung in einem Navigationsmodul die Mehrsprachig umgesetzt werden soll und nur ein Modul verwenden will, 
 könnte man doch bei den ARIA-Label eine Bezeichnung über die Contao Insert-Tags ermöglichen.
 
+
+- Button im Menü per Script erzeugen oder im TPL ausgeben
+
