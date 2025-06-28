@@ -6,4 +6,4 @@ Aria-labels sind für Elemente nicht nötig, wenn das HTML-Element selbst sprech
 
 
 ## Navigation
-1 Navigation für desktop und mobile zusammen. So wenig wie möglich Javaskript. 
+1 Navigation für desktop und mobile zusammen. So wenig wie möglich Javascript. 
