@@ -55,4 +55,8 @@ Beispiel:
             width: 1px;
         }
 ```
+
+ARIA: aria-haspopup-Attribut funktioniert im Safari aktuell nicht komplett.
+
+
 Interessante Seite dazu: https://gehirngerecht.digital/
