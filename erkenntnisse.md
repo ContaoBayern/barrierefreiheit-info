@@ -58,5 +58,8 @@ Beispiel:
 
 ARIA: aria-haspopup-Attribut funktioniert im Safari aktuell nicht komplett, zumindest bei älteren Systemen. Bei neueren Version sollte das behoben sein.
 
+Button kann entweder über Javascript ergänzt werden (aktuelle Umsetzung in der Demo) oder durch direkte Anpassung des Templates:
+
+
 
 Interessante Seite dazu: https://gehirngerecht.digital/
