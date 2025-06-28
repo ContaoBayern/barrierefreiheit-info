@@ -1,8 +1,8 @@
 # Erkenntnisse
 
 ## Semantik
-Aria-Labels:
-Aria-labels sind für Elemente nicht nötig, wenn das HTML-Element selbst sprechend ist: z.B. main braucht kein seperates aria-label, da es automatisch erkannt wird.
+ARIA-roles:
+ARIA-roles sind für Elemente nicht nötig, wenn das HTML-Element selbst sprechend ist: z.B. main braucht keine seperate aria-role, da es automatisch erkannt wird.
 
 
 ## Navigation
