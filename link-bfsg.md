@@ -1,4 +1,3 @@
-````markdown
 # Links und BFSG
 
 Barrierefreie (externe) Links sind ein wichtiger Bestandteil einer zugänglichen Webseite, da sie Menschen mit verschiedenen Einschränkungen die Navigation und das Verständnis erleichtern. Die folgenden Anforderungen und Aspekte sollten beachtet werden:
