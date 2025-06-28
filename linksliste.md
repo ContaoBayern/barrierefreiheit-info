@@ -170,6 +170,7 @@
 -   [Screenreader Unterstützung für ARIA](https://www.powermapper.com/tests/screen-readers/aria/)
 -   [Alistapart über ARIA](https://alistapart.com/article/the-accessibility-of-wai-aria/)
 -   [ARIA Support nach Browser und Screenreader](https://a11ysupport.io/)
+-   [accessibility-workshop/](https://www.michaelreichart.de/accessibility-workshop/)
 
 # Contao Webseiten die Barrierefreih umgesetzt wurden
 
