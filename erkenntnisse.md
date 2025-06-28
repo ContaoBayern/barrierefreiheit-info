@@ -41,7 +41,7 @@ Beispiel:
 	}
 }
 ```
-
+```scss
 .invisible {
             border: 0;
             clip-path: circle(0);
@@ -52,5 +52,5 @@ Beispiel:
             position: absolute;
             width: 1px;
         }
-
+```
 Interessante Seite dazu: https://gehirngerecht.digital/
