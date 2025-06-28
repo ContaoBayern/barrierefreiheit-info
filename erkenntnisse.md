@@ -65,10 +65,12 @@ Button kann entweder über Javascript ergänzt werden (aktuelle Umsetzung in der
 Die Demo nutzt die Umsetzung über Javascript mit diesem Script (https://github.com/contao/contao-demo/blob/5.3.x/files/contaodemo/theme/src/js/a11y-nav.js):
 ```js
 
-# Dieses Skript basiert auf dem Werk von zoglo / Sebastian Zoglowek, lizenziert unter CC BY-SA 4.0
-# Original: [[Link zur Quelle]](https://github.com/contao/contao-demo/blob/5.3.x/files/contaodemo/theme/src/js/a11y-nav.js)
-# Änderungen: aktuell noch keine, evtl. geplant: Änderungen, dass man nach dem letzten Punkt des Submenüs zurück zum Button, anstatt auf den nächsten Menüpunkt springt, Mehrsprachigkeit
-# Lizenz: https://creativecommons.org/licenses/by-sa/4.0/
+/*! 
+Dieses Skript basiert auf dem Werk von zoglo / Sebastian Zoglowek, lizenziert unter CC BY-SA 4.0
+Original: [[Link zur Quelle]](https://github.com/contao/contao-demo/blob/5.3.x/files/contaodemo/theme/src/js/a11y-nav.js)
+Änderungen: aktuell noch keine, evtl. geplant: Änderungen, dass man nach dem letzten Punkt des Submenüs zurück zum Button, anstatt auf den nächsten Menüpunkt springt, Mehrsprachigkeit
+Lizenz: https://creativecommons.org/licenses/by-sa/4.0/
+!*/
 
 class A11yNav {
     constructor(options) {
