@@ -42,4 +42,15 @@ Beispiel:
 }
 ```
 
+.invisible {
+            border: 0;
+            clip-path: circle(0);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            width: 1px;
+        }
+
 Interessante Seite dazu: https://gehirngerecht.digital/
