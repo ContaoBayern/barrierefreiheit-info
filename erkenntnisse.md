@@ -4,6 +4,15 @@
 ### ARIA-roles
 ARIA-roles sind für Elemente nicht nötig, wenn das HTML-Element selbst sprechend ist: z.B. `main` braucht keine seperate `aria-role`, da es automatisch erkannt wird.
 
+## Fokusrahmen
+Ggf. Farbe passend ändern
+```scss
+:focus-visible{
+	box-shadow: 0 0 0 3px $primary, 0 0 0 9px $primary;
+	outline: 3px solid white;
+	outline-offset: 3px;
+}
+```
 
 ## Navigation
 1 Navigation für desktop und mobile zusammen. So wenig wie möglich Javascript.
