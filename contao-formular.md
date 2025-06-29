@@ -7,7 +7,8 @@
 - Automatisch erkannte Eingabefehler müssen in einer schriftlichen Fehlermeldung einen klaren Hinweis auf das fehlerhafte Element geben.
 - Es sollten Korrekturempfehlungen für falsche Benutzereingaben angegeben werden.
 - Vermeidung von Captchas: Grafische Captchas sollten vermieden oder eine barrierefreie Alternative bereitgestellt werden, da sie für Menschen mit Sehbehinderungen problematisch sind
-- Bei allen Formularfeldern auf die richtige Validierung achten. Fehlermeldungen müssen sprechend sein.  
+- Bei allen Formularfeldern auf die richtige Validierung achten. Fehlermeldungen müssen sprechend sein.
+- Live Valedierung: [zur Erweiterung von Trilobet](https://extensions.contao.org/?q=formular&pages=3&p=trilobit-gmbh/contao-formvalidation-bundle)
 
 ## Zeitliche Begrenzungen:
 - Es sollte keine Zeitbegrenzung für die Eingabe geben, es sei denn, Nutzer können diese Begrenzung abschalten oder anpassen.
@@ -35,4 +36,5 @@ In Verbindung mit einem Tooltip gibt aria-describedby an, dass der Tooltip den B
 <button aria-describedby="tooltip1">Informationen anzeigen</button>
 <div id="tooltip1" role="tooltip">Dies sind zusätzliche Informationen, die der Benutzer sehen kann.</div>
 ```
-  
+
+
