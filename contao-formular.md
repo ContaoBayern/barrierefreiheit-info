@@ -21,9 +21,6 @@ Die Funktionalitäten innerhalb des Formulars und der gesamten Website sollten k
 ## Farbe und Kontrast: 
 Interaktive Elemente sollten sich farblich abheben. Es ist wichtig, einen ausreichenden Kontrast zwischen Schriftfarbe und Hintergrundfarbe zu gewährleisten (mindestens 4,5:1 für normalen Text, 3:1 für große Schrift). Farbe sollte niemals das einzige Mittel zur Vermittlung von Informationen sein, um Menschen mit Farbfehlsichtigkeit nicht auszuschließen.
 
-## Verständliche Formularfelder durch Platzhalter und Labels:
-Alle Eingabefelder sollten eine angemessene placeholder-Beschriftung haben und eine klare Anweisung durch das zugehörige <label> haben.
-
 ## Reihenfolge von Formularfeldern:
 Alle Formularelemente auf eine logische und benutzerfreundliche Reihenfolge prüfen.
 
