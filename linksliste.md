@@ -28,7 +28,7 @@
 
 -   [BITV](https://www.gesetze-im-internet.de/bitv_2_0/BJNR184300011.html) - BITV (Bundesministerium für Justiz)
 -   [BIK - Barrierefrei informieren und kommunizieren](https://bik-fuer-alle.de/barrierefreiheit-umsetzen.html) - Leitfaden zur Umsetzung barrierefreier Webseiten
--   [BITV Prüfschritte](https://ergebnis.bitvtest.de/pruefverfahren?tx_twbitvtest_procedure%5Baction%5D=show&tx_twbitvtest_procedure%5Bcontroller%5D=Procedure&tx_twbitvtest_procedure%5Bprocedure%5D=11&cHash=4a277975185785af9c687eb03489b3ef) - Das offizielle Prüfverfahren
+-   [BITV Prüfschritte](https://bitvtest.de/pruefverfahren/bitv-20-web) - Das offizielle Prüfverfahren
 -   [Barrierefreie Gestaltung von User Interface-Elementen ](https://handreichungen.bfit-bund.de/barrierefreie-uie/) der Überwachungsstelle des Bundes für Barrierefreiheit vin Informationstechnik
 
 ### Checklisten
