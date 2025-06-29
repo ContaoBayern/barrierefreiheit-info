@@ -8,7 +8,7 @@
 - Es sollten Korrekturempfehlungen für falsche Benutzereingaben angegeben werden.
 - Vermeidung von Captchas: Grafische Captchas sollten vermieden oder eine barrierefreie Alternative bereitgestellt werden, da sie für Menschen mit Sehbehinderungen problematisch sind
 - Bei allen Formularfeldern auf die richtige Validierung achten. Fehlermeldungen müssen sprechend sein.
-- Live Valedierung: [zur Erweiterung von Trilobet](https://extensions.contao.org/?q=formular&pages=3&p=trilobit-gmbh/contao-formvalidation-bundle)
+- Live Valedierung: [zur Erweiterung von Trilobit](https://extensions.contao.org/?q=formular&pages=3&p=trilobit-gmbh/contao-formvalidation-bundle)
 
 ## Zeitliche Begrenzungen:
 - Es sollte keine Zeitbegrenzung für die Eingabe geben, es sei denn, Nutzer können diese Begrenzung abschalten oder anpassen.
