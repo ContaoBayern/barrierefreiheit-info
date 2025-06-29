@@ -108,3 +108,8 @@ TODO: Umsetzung noch zu beschreiben
 
 ## Slider
 [slider Anforderungen und Empfehlungen](https://handreichungen.bfit-bund.de/barrierefreie-uie/karussell.html)
+
+## Tabellen
+Tabellen sollten eine th besitzen, damit erkennbar ist, um was es in jeder Spalte inhaltlich geht. [Die Lesereihenfolge](https://bitvtest.de/pruefschritt/wcag-21-web/wcag-21-web-1-3-1e-datentabellen-richtig-aufgebaut) 
+Kopfzeile hinzufügen, Reihenüberschriften sollte im Backend angehakt werden.  
+Zusammenfassung erzeugt nun Caption, was richtig ist (früher summary).
