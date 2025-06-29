@@ -38,6 +38,10 @@ In Verbindung mit einem Tooltip gibt aria-describedby an, dass der Tooltip den B
 <button aria-describedby="tooltip1">Informationen anzeigen</button>
 <div id="tooltip1" role="tooltip">Dies sind zusätzliche Informationen, die der Benutzer sehen kann.</div>
 ```
+```
+<input aria-describedby="tooltip2"> type="text" name="name" id="ctrl_16" class="text" value="">
+<div id="tooltip2" role="tooltip">Dies sind zusätzliche Informationen, die der Benutzer sehen kann.</div>
+```
 
 ## Status eines Feldes
 - Checkbox
