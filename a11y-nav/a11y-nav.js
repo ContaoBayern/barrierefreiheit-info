@@ -127,6 +127,9 @@ class A11yNav {
 		if (!currentUL || !this.navigation.contains(currentUL))
 			return
 
+		if(!currentUL.parentElement.closest('ul'))
+			return
+
 		const items = currentUL.querySelectorAll(':scope > li > a, :scope > li > button');
 		const firstItem = currentUL.previousElementSibling || items[0];
 		const lastItem = items[items.length - 1];
