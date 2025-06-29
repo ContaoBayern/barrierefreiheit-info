@@ -82,19 +82,28 @@ Nicht immer steht der Platz zur Verfügung, im Linktext alle Informationen zur V
 
 Beiden müsste die Möglichkeit zur Verfügung gestellt werden, **`aria-labelledby`** zu verwenden.
 
-In Hyperlink müsste dazu ein weiteres Eingabefeld **`aria-labelledby`** hinzugefügt werden und das twig-template dementsprechend erweitert. Zusätzlich benötigt es CSS, um die Beschreibung im Frontend nicht anzuzeigen (nicht `display:none`).
+**Inhaltselement hyperlink - Für Andreas**
 
-Die ID muss eindeutig/einmalig sein pro Seite\!
+Im Modul Hyperlink müsste dazu ein weiteres Eingabefeld für **`aria-labelledby`** hinzugefügt werden. 
+- Name:Linkbeschreibung
+- Hinweistext: Informationen zum Linkziel (z.B. Externer Link zu Wikipedia öffnet in neuem Tab).
+- twig-template erweitern.
+- Zusätzlich benötigt es CSS, um die Beschreibung im Frontend nicht anzuzeigen (nicht `display:none`).
+- Die ID muss eindeutig/einmalig sein pro Seite\! Am besten die jeweiligen ** Inhaltselement-ID ** aus tl_content
+- ID muss dann auch der Wert von aria-labelledby im **a tag** sein.
 
-**HTML-Ausgabe:**
+
+**HTML-Ausgabe - content_hyperlink:**
 
 ```html
-<a href="[https://de.wikipedia.org](https://de.wikipedia.org)" target="_blank" rel="noopener noreferrer" aria-labelledby="link-desc">
-    Wikipedia
-</a>
-<span id="link-desc" class="visually-hidden">
-    Externer Link zu Wikipedia öffnet in neuem Tab.
-</span>
+<div class="content-hyperlink">  
+   <a href="[https://de.wikipedia.org](https://de.wikipedia.org)" target="_blank" rel="noopener noreferrer" aria-labelledby="link-desc">
+       Wikipedia
+   </a>
+   <span id="link-desc" class="visually-hidden">
+       Externer Link zu Wikipedia öffnet in neuem Tab.
+   </span>
+</div>
 ```
 
 ```css
