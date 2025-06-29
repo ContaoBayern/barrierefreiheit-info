@@ -32,7 +32,7 @@ Interaktive Elemente sollten sich farblich abheben. Es ist wichtig, einen ausrei
   
 **aria-describedby:**
 Das Attribut aria-describedby wird verwendet, um einem Element anzugeben, dass es durch den Inhalt eines anderen Elements beschrieben wird. Es hilft dabei, zusätzliche Informationen für assistive Technologien bereitzustellen.
-In Verbindung mit einem Tooltip gibt aria-describedby an, dass der Tooltip den Button oder das interaktive Element beschreibt.  
+In Verbindung mit einem Tooltip gibt aria-describedby an, dass der Tooltip den Button, Input oder das interaktive Element beschreibt.  
 
 ```
 <button aria-describedby="tooltip1">Informationen anzeigen</button>
