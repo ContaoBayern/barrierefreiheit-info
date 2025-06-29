@@ -51,16 +51,16 @@ Beispiel:
 }
 ```
 
+Button kann entweder über Javascript ergänzt werden (aktuelle Umsetzung in der Demo) oder durch direkte Anpassung des Templates:
+
 ARIA: \
 aria-haspopup-Attribut funktioniert im Safari aktuell nicht komplett, zumindest bei älteren Systemen. Bei neueren Version sollte das behoben sein. \
 aria-expanded funktioniert allerdings auch in aktuellen Safari Versionen in Kombination mit VoiceOver nicht.
 
-Button kann entweder über Javascript ergänzt werden (aktuelle Umsetzung in der Demo) oder durch direkte Anpassung des Templates:
-
 
 Die Demo nutzt die Umsetzung über Javascript mit diesem Script (https://github.com/contao/contao-demo/blob/5.3.x/files/contaodemo/theme/src/js/a11y-nav.js):
 
-(https://github.com/ContaoBayern/barrierefreiheit-info/blob/main/a11y-nav/a11y-nav.js)
+https://github.com/ContaoBayern/barrierefreiheit-info/blob/main/a11y-nav/a11y-nav.js
 
 ```js
 // toggles navi sidebar
