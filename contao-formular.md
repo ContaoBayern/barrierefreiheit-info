@@ -1,11 +1,13 @@
 # Anforderungen
-## Semantische Struktur:
+## Semantische Struktur und Reihenfolge:
 - Mehrteilige-Formulare sollten durch inhaltlich zusammengehörige Gruppen mit dem <fieldset>-Element im HTML-Quelltext strukturiert werden.
 - Eine saubere HTML-Struktur ist entscheidend, damit Screenreader die Formularelemente, ihre Rolle (z.B. Checkbox, Button), ihren Namen und ihren Zustand (z.B. ausgewählt, erweitert) korrekt interpretieren und ausgeben können.
-## Fehlerbehandlung:
+- Alle Formularelemente auf eine logische und benutzerfreundliche Reihenfolge prüfen.  
+## Fehlerbehandlung und Validierung:
 - Automatisch erkannte Eingabefehler müssen in einer schriftlichen Fehlermeldung einen klaren Hinweis auf das fehlerhafte Element geben.
 - Es sollten Korrekturempfehlungen für falsche Benutzereingaben angegeben werden.
 - Vermeidung von Captchas: Grafische Captchas sollten vermieden oder eine barrierefreie Alternative bereitgestellt werden, da sie für Menschen mit Sehbehinderungen problematisch sind
+- Bei allen Formularfeldern auf die richtige Validierung achten. Fehlermeldungen müssen sprechend sein.  
 
 ## Zeitliche Begrenzungen:
 - Es sollte keine Zeitbegrenzung für die Eingabe geben, es sei denn, Nutzer können diese Begrenzung abschalten oder anpassen.
@@ -20,9 +22,3 @@ Die Funktionalitäten innerhalb des Formulars und der gesamten Website sollten k
 
 ## Farbe und Kontrast: 
 Interaktive Elemente sollten sich farblich abheben. Es ist wichtig, einen ausreichenden Kontrast zwischen Schriftfarbe und Hintergrundfarbe zu gewährleisten (mindestens 4,5:1 für normalen Text, 3:1 für große Schrift). Farbe sollte niemals das einzige Mittel zur Vermittlung von Informationen sein, um Menschen mit Farbfehlsichtigkeit nicht auszuschließen.
-
-## Reihenfolge von Formularfeldern:
-Alle Formularelemente auf eine logische und benutzerfreundliche Reihenfolge prüfen.
-
-## Validierung und Fehlermeldungen:
-Bei allen Formularfeldern auf die richtige Validierung achten. Fehlermeldungen müssen sprechend sein.
