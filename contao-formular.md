@@ -24,7 +24,7 @@ Die Funktionalitäten innerhalb des Formulars und der gesamten Website sollten k
 Interaktive Elemente sollten sich farblich abheben. Es ist wichtig, einen ausreichenden Kontrast zwischen Schriftfarbe und Hintergrundfarbe zu gewährleisten (mindestens 4,5:1 für normalen Text, 3:1 für große Schrift). Farbe sollte niemals das einzige Mittel zur Vermittlung von Informationen sein, um Menschen mit Farbfehlsichtigkeit nicht auszuschließen.
 
 ## role="tooltip" und aria-describedby
-- Tooltips funktionieren gleichermaßen bei Mausberührung und Tastaturfokus. Sie werden außerdem nur bei Fokus zugänglich gemacht. Dass ein Tooltip vorhanden ist, wird durch ein Icon signalisiert. Solche Visualisierungen sind eigentlich eine Aufgabe des Browsers. Der Zusatztext, der über aria-describedby verknüpft wird, macht klar, dass er den Linktext ergänzt. Um die redundante Ausgabe der Tooltip-Texte in Screenreadern zu vermeiden, ist die Zuweisung des aria-hidden-Attributs erforderlich. Die Einblendung des Tooltips am Bildschirm wird über das aria-hidden-Attribut und ein entsprechender CSS-Selektor gesteuert.
+- Tooltips funktionieren gleichermaßen bei Mausberührung und Tastaturfokus. Sie werden jedoch nur angezeigt, wenn das Element fokussiert ist. Dass ein Tooltip vorhanden ist, wird durch ein Icon signalisiert. Solche Visualisierungen sind eigentlich eine Aufgabe des Browsers. Der Zusatztext, der über aria-describedby verknüpft wird, macht klar, dass er den Linktext ergänzt. Um die redundante Ausgabe der Tooltip-Texte in Screenreadern zu vermeiden, ist die Zuweisung des aria-hidden-Attributs erforderlich. Die Einblendung des Tooltips am Bildschirm wird über das aria-hidden-Attribut und ein entsprechender CSS-Selektor gesteuert.
 
   
 **aria-describedby:**
