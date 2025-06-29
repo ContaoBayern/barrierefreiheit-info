@@ -1,3 +1,10 @@
+/*!Add commentMore actions
+Dieses Skript basiert auf dem Werk von zoglo / Sebastian Zoglowek, lizenziert unter CC BY-SA 4.0
+Original: (https://github.com/contao/contao-demo/blob/5.3.x/files/contaodemo/theme/src/js/a11y-nav.js)
+Änderungen: aktuell noch keine, evtl. geplant: Änderungen, dass man nach dem letzten Punkt des Submenüs zurück zum Button, anstatt auf den nächsten Menüpunkt springt, Mehrsprachigkeit
+Lizenz: https://creativecommons.org/licenses/by-sa/4.0/
+*/
+
 class A11yNav {
     constructor(options) {
         this.options = this._merge({
