@@ -108,5 +108,5 @@ Interessante Seite dazu: https://gehirngerecht.digital/
 Kombination aus Outline und Shadow verwenden, damit es sowohl auf hellen und dunklen Hintergünden funktioniert. Ggf. mit dotted.
 
 ## Skip-Links
-Sich widerholende Bereich wie Header etc. sollen überspringbar sein. 
+Sich widerholende Bereich wie Header etc. sollen überspringbar sein. Evtl. auch Punkte wie "direkt zur Navigation springen".  
 TODO: Umsetzung noch zu beschreiben
