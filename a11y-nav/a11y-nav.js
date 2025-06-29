@@ -1,10 +1,3 @@
-/*!
-Dieses Skript basiert auf dem Werk von zoglo / Sebastian Zoglowek, lizenziert unter CC BY-SA 4.0
-Original: (https://github.com/contao/contao-demo/blob/5.3.x/files/contaodemo/theme/src/js/a11y-nav.js)
-Änderungen: aktuell noch keine, evtl. geplant: Änderungen, dass man nach dem letzten Punkt des Submenüs zurück zum Button, anstatt auf den nächsten Menüpunkt springt, Mehrsprachigkeit
-Lizenz: https://creativecommons.org/licenses/by-sa/4.0/
-*/
-
 class A11yNav {
     constructor(options) {
         this.options = this._merge({
@@ -95,6 +88,54 @@ class A11yNav {
         }
     }
 
+	_focusTrapEventDesktop(event){
+        if (!(event.key === 'Tab' || event.keyCode === 9))
+            return
+		if (!this.navigation.contains(document.activeElement))
+			return
+
+		if(document.activeElement.classList.contains('btn-toggle-submenu')) {
+			if(document.activeElement.ariaExpanded === 'true'){
+				const submenu = document.activeElement.closest('li').querySelector('ul');
+				if (submenu) {
+					if(event.shiftKey){
+						const lastItem = submenu.querySelector(':scope > li:last-child > a, :scope > li:last-child > button');
+						if (lastItem) {
+							event.preventDefault();
+							lastItem.focus();
+						}
+					}else{
+						const firstItem = submenu.querySelector(':scope > li:first-child > a, :scope > li:first-child > button');
+						if (firstItem) {
+							event.preventDefault();
+							firstItem.focus();
+						}
+					}
+				}
+				return
+			}
+		}
+
+		let currentUL = event.target.closest('ul');
+		if (!currentUL || !this.navigation.contains(currentUL))
+			return
+
+		const items = currentUL.querySelectorAll(':scope > li > a, :scope > li > button');
+		const firstItem = currentUL.previousElementSibling || items[0];
+		const lastItem = items[items.length - 1];
+
+		if (document.activeElement === lastItem && !event.shiftKey) {
+			event.preventDefault();
+			firstItem?.focus();
+		}
+
+		if (document.activeElement === firstItem && event.shiftKey) {
+			event.preventDefault();
+			lastItem?.focus();
+		}
+
+	}
+
     /**
      * Adds and removes the focusTrap based on the mobile navigation state
      *
@@ -102,7 +143,7 @@ class A11yNav {
      */
     _focusMenu() {
         // consider the navigation state from scripts.js
-        const state = document.body.classList.contains('show-nav-mobile')
+        const state = document.body.classList.contains('show-nav-mobile') || window.innerWidth >= this.options.minWidth
 
         if (state)
             document.addEventListener('keydown', this._focusTrapEvent, false)
@@ -118,6 +159,7 @@ class A11yNav {
     _init() {
         this._createSubMenuButton()
         this._initMobileToggleEvents()
+        this._initDesktopToggleEvents()
 
         if (!this.navigation.ariaLabel) {
             this.navigation.ariaLabel = this.options.ariaLabels.main
@@ -286,6 +328,13 @@ class A11yNav {
         })
     }
 
+	_initDesktopToggleEvents() {
+		this._initFocusTrapTargets()
+		this._focusTrapEvent = this._focusTrapEvent.bind(this)
+		if(window.innerWidth >= this.options.minWidth) {
+			document.addEventListener('keydown', (e) => {this._focusTrapEventDesktop(e)}, false)
+		}
+	}
     /**
      * Initializes the dropdown
      *
