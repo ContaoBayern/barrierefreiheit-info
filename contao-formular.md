@@ -5,7 +5,7 @@
 - Alle Formularelemente auf eine logische und benutzerfreundliche Reihenfolge prüfen.  
 ## Fehlerbehandlung und Validierung:
 - Automatisch erkannte Eingabefehler müssen in einer schriftlichen Fehlermeldung einen klaren Hinweis auf das fehlerhafte Element geben.
-- Es sollten Korrekturempfehlungen für falsche Benutzereingaben angegeben werden.
+- Es sollten Korrekturempfehlungen für falsche Benutzereingaben angegeben werden (bei: AAA).
 - Vermeidung von Captchas: Grafische Captchas sollten vermieden oder eine barrierefreie Alternative bereitgestellt werden, da sie für Menschen mit Sehbehinderungen problematisch sind
 - Bei allen Formularfeldern auf die richtige Validierung achten. Fehlermeldungen müssen sprechend sein.
 - ### Lösungen für Contao 5
