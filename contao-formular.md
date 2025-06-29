@@ -39,3 +39,43 @@ In Verbindung mit einem Tooltip gibt aria-describedby an, dass der Tooltip den B
 
 ## Uploads
 
+## Status eines Feldes
+- Checkbox
+- Radio-Button-Menü
+- Select-Menü
+
+Screenreader lesen automatisch den Zustand von z.B. <input type="checkbox"> vor. Es benötigt 
+Das allein ist oft schon ausreichend, wenn die Checkbox einfach sichtbar und korrekt beschriftet ist.
+
+**Wichtig dabei:**
+
+- Nutze <label>-Elemente, die mit der Checkbox verbunden sind.
+- Achte auf kontrastreiche Darstellung.
+- Nutze die Attribute checked, disabled oder readonly nur sinnvoll, da Screenreader diese Zustände ebenfalls ansagen.
+
+Willst du zusätzlich eine Statusmeldung vorlesen lassen (z. B. „Newsletter wurde abonniert“), kannst du ein sogenanntes ARIA-Live-Region-Element verwenden. 
+
+```
+<label>
+  <input type="checkbox" id="newsletter" name="newsletter" onchange="updateStatus()">
+  Newsletter abonnieren
+</label>
+
+<div id="statusMessage" aria-live="polite" style="position: absolute; left: -9999px;"></div>
+
+<script>
+function updateStatus() {
+  const checkbox = document.getElementById('newsletter');
+  const status = document.getElementById('statusMessage');
+  
+  if (checkbox.checked) {
+    status.textContent = 'Newsletter wurde abonniert.';
+  } else {
+    status.textContent = 'Newsletter wurde abbestellt.';
+  }
+}
+</script>
+
+```
+
+
