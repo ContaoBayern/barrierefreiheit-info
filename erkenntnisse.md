@@ -106,3 +106,7 @@ Interessante Seite dazu: https://gehirngerecht.digital/
 
 ## Focus
 Kombination aus Outline und Shadow verwenden, damit es sowohl auf hellen und dunklen Hintergünden funktioniert. Ggf. mit dotted.
+
+## Skip-Links
+Sich widerholende Bereich wie Header etc. sollen überspringbar sein. 
+TODO: Umsetzung noch zu beschreiben
