@@ -103,3 +103,6 @@ Interessante Seite dazu: https://gehirngerecht.digital/
  - TinyMCE anpassen (Leere `p` Tags, leere Überschriften raus, a11y Plugin (bezahlt, https://www.tiny.cloud/docs/tinymce/latest/a11ychecker/), Möglichkeiten redizieren, erlaubte Elemente einschränken)
  - Ggf. "einfach" erkennbare Probleme per `modifyFrontendPage` Hook abfangen, entfernen/korrigieren
  - Ggf. automatische Validierung von "einfach" erkennbaren Problemen im Backend (beforesubmit_callback o.Ä.)
+
+## Focus
+Kombination aus Outline und Shadow verwenden, damit es sowohl auf hellen und dunklen Hintergünden funktioniert. Ggf. mit dotted.
