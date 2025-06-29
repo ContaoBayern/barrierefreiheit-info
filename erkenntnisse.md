@@ -105,3 +105,6 @@ Kombination aus Outline und Shadow verwenden, damit es sowohl auf hellen und dun
 ## Skip-Links
 Sich widerholende Bereich wie Header etc. sollen überspringbar sein. Evtl. auch Punkte wie "direkt zur Navigation springen".  
 TODO: Umsetzung noch zu beschreiben
+
+## Slider
+[slider Anforderungen und Empfehlungen](https://handreichungen.bfit-bund.de/barrierefreie-uie/karussell.html)
