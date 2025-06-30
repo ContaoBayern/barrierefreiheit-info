@@ -32,7 +32,7 @@ Firefox kann man hier unterschiedlich den Browser eingestellt haben: Einstellung
 
 
 ### Gestaltung
-Wenn man den Button nicht anzeigen möchte, könnte man den Button mit `clip-path` ausblenden und bei Fokus das 'clip-path' wieder rausnehmen.
+Wenn man den Button nicht anzeigen möchte, könnte man den Button mit `clip-path` ausblenden und bei Fokus das `clip-path` wieder rausnehmen.
 Beispiel:
 ```scss
 .invisible {
