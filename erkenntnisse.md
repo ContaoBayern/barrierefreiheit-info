@@ -24,6 +24,7 @@ Firefox kann man hier unterschiedlich den Browser eingestellt haben: Einstellung
 - Menüpunkt führt direkt auf Seite, ohne Untermenü
 - Menüpunkt ist nur Schalter der nur das Ausklappen auslöst, besitzt selbst aber keine Seite.
 - Menüpunkt führt direkt auf Seite und hat zusätzlich Untermenü
+<br>
 
 - Menüpunkt führt direkt auf Seite, dann ist sematisch ein Link `<a>` korrekt
 - Menüpunkt ist nur Modal -> dann muss es sematisch ein Button sein.
