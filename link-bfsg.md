@@ -2,27 +2,31 @@
 
 Barrierefreie (externe) Links sind ein wichtiger Bestandteil einer zugänglichen Webseite, da sie Menschen mit verschiedenen Einschränkungen die Navigation und das Verständnis erleichtern. Die folgenden Anforderungen und Aspekte sollten beachtet werden:
 
+<a name="anker_linktext_1"></a>
 1.  **Aussagekräftige und unterscheidbare Linktexte:**
     *   Der Linktext sollte das Ziel und den Zweck des Links entweder direkt aus sich selbst heraus oder aus dem unmittelbaren Kontext erkennen lassen. Dies ist besonders wichtig für blinde Menschen, die Screenreader nutzen und von Link zu Link springen können, wobei ihnen nur die Linktexte vorgelesen werden.
     *   Uninformative Formulierungen wie „hier klicken“ oder „mehr“ sollten vermieden werden, insbesondere wenn sie mehrfach auf einer Seite vorkommen und zu unterschiedlichen Inhalten führen.
         *   Ein anschauliches Beispiel für einen aussagekräftigen Linktext wäre: „Lesen Sie den Artikel zum Thema barrierefreie Farbkontraste auf der Webseite der Beratungsstelle Barrierefreiheit“.
     *   Die Bezeichnung von Links sollte über die gesamte Webseite hinweg **konsistent** sein, wenn sie auf dieselbe Seite verweisen (z. B. immer „Kontakt“ statt abwechselnd „Schreiben Sie uns“).
 
+<a name="anker_linktext_2"></a>
 2.  **Informationen zu Dateiformaten bei Verlinkung auf Dateien:**
     *   Wird auf eine Datei (z.B. ein PDF) statt auf eine andere Webseite verlinkt, sollte das Dateiformat im Linktext angegeben werden.
     *   Idealerweise sollten die verlinkten Dateien selbst barrierefrei sein. Falls nicht, ist es hilfreich anzugeben, dass es sich um eine nicht barrierefreie Datei handelt (z.B. „Download Merkblatt Alternativtexte (barrierefreies PDF)“).
 
+<a name="anker_linktext_3"></a>
 3.  **Tastaturbedienung und visueller Fokus:**
     *   Alle Verlinkungen auf einer Webseite müssen **mit der Tastatur erreichbar** sein. Dies kann durch Navigieren mit der Tabulatortaste getestet werden.
     *   Es muss ein **visuelles Feedback** geben, wenn ein Link mit der Tastatur angesprungen wird, z.B. durch eine Umrahmung, Unterstreichung oder Farb- und Formveränderung.
     *   Die Fokus-Reihenfolge der Links sollte logisch sein.
     *   Es sollte keine bestimmte Zeiteinteilung für einzelne Tastanschläge erforderlich sein. Der Tastaturfokus darf bei keinem Element blockiert sein, und Nutzende müssen jedes Element mit der Tastatur ansteuern und verlassen können.
 
-**Klickbare Bereiche auf Mobilgeräten:**
+
+## Klickbare Bereiche auf Mobilgeräten:
 
 Für die mobile Nutzung sollten Links und Schaltflächen ausreichend Abstand zueinander haben und mindestens 24 Pixel hoch und breit sein, um die Bedienung mit dem Finger auf Tablets oder Smartphones zu erleichtern.
 
-**HTML-Struktur und ARIA-Attribute**
+## HTML-Struktur und ARIA-Attribute
 
 *   Das `aria-label`-Attribut kann verwendet werden, um einem Element, das keinen sichtbaren Textinhalt hat (z.B. ein Button mit einem SVG-Icon), einen zugänglichen Namen zu geben.
 *   `aria-labelledby` ist gegenüber `aria-label` zu bevorzugen, wenn ein sichtbares Label im DOM existiert, das referenziert werden kann. Beide Attribute bieten einen zugänglichen Namen.
@@ -30,14 +34,14 @@ Für die mobile Nutzung sollten Links und Schaltflächen ausreichend Abstand zue
 
 ---
 
-### Zu 1.:
+### Zu [1.](#anker_linktext_1):
 
 Nicht immer steht der Platz zur Verfügung, im Linktext alle Informationen zur Verfügung zu stellen. Vor allem, wenn dieser z.B. als Button formatiert ist. So ist z.B. auch oft über den Linktext nicht zu erkennen das es sich um eine Verlinkung zu einer externen Seite handelt.
 
 *   Verlinkungen zu externen Seiten sollten sich visuell unterscheiden
 *   Als Info dem Screenreader zur Verfügung stehen.
 
-**Wenn das nicht geht:**
+#### Wenn das nicht geht:
 
 ```html
 <a href="[https://de.wikipedia.org](https://de.wikipedia.org)" target="_blank" rel="noopener noreferrer">
@@ -47,7 +51,7 @@ Nicht immer steht der Platz zur Verfügung, im Linktext alle Informationen zur V
 
 ### Lösungen:
 
-**Screenreader: `aria-labelledby`**
+#### Screenreader: `aria-labelledby`
 
 ```html
 <a href="[https://de.wikipedia.org](https://de.wikipedia.org)" target="_blank" rel="noopener noreferrer" aria-labelledby="link-desc">
@@ -71,7 +75,7 @@ Nicht immer steht der Platz zur Verfügung, im Linktext alle Informationen zur V
 }
 ```
 
-**Warum `aria-labelledby` und nicht `aria-label`\!**
+##### Warum `aria-labelledby` und nicht `aria-label`\!
 
 `aria-labelledby` ist gegenüber `aria-label` zu bevorzugen, wenn ein sichtbares Label im DOM existiert, das referenziert werden kann. Beide Attribute bieten einen zugänglichen Namen.
 
@@ -82,7 +86,9 @@ Nicht immer steht der Platz zur Verfügung, im Linktext alle Informationen zur V
 
 Beiden müsste die Möglichkeit zur Verfügung gestellt werden, **`aria-labelledby`** zu verwenden.
 
-**Inhaltselement hyperlink - Für Andreas**
+#### Inhaltselement hyperlink
+
+Siehe eine erste Implementierung in den [bfsg-snippets](https://github.com/ContaoBayern/bfsg-snippets).
 
 Im Modul Hyperlink müsste dazu ein weiteres Eingabefeld für **`aria-labelledby`** hinzugefügt werden. 
 - Name:Linkbeschreibung
@@ -93,7 +99,7 @@ Im Modul Hyperlink müsste dazu ein weiteres Eingabefeld für **`aria-labelledby
 - ID muss dann auch der Wert von aria-labelledby im **a tag** sein.
 
 
-**HTML-Ausgabe - content_hyperlink:**
+#### HTML-Ausgabe - content_hyperlink:
 
 ```html
 <div class="content-hyperlink">  
@@ -119,12 +125,9 @@ Im Modul Hyperlink müsste dazu ein weiteres Eingabefeld für **`aria-labelledby
 }
 ```
 
-**TinyMCE**
+#### TinyMCE
 
   * Manuell über die Codeansicht.
   * Gibt es eine bessere Lösung?
 
 [https://www.tiny.cloud/docs/tinymce/latest/accessibility/](https://www.tiny.cloud/docs/tinymce/latest/accessibility/)
-
-```
-```
