@@ -81,23 +81,24 @@ class A11yNav {
      * @private
      */
     _focusTrapEvent(event) {
-        if (!(event.key === 'Tab' || event.keyCode === 9))
+        if (event.keyCode !== 9 && (event.keyCode <= 37 && event.keyCode >= 40))
             return
 
-        if (document.activeElement === this.lastFocus && !event.shiftKey) {
+        if (document.activeElement === this.lastFocus && ((event.keyCode == 9 && !event.shiftKey) || event.keyCode === 39 || event.keyCode === 40)) {
             event.preventDefault()
             this.firstFocus?.focus()
         }
 
-        if (document.activeElement === this.firstFocus && event.shiftKey) {
+        if (document.activeElement === this.firstFocus && ((event.keyCode == 9 && event.shiftKey) || event.keyCode === 37 || event.keyCode === 38)) {
             event.preventDefault()
             this.lastFocus?.focus()
         }
     }
 
 	_focusTrapEventDesktop(event){
-        if (!(event.key === 'Tab' || event.keyCode === 9))
+        if (!(event.keyCode === 9 || (event.keyCode >= 37 && event.keyCode <= 40)))
             return
+
 		if (!this.navigation.contains(document.activeElement))
 			return
 
@@ -105,7 +106,7 @@ class A11yNav {
 			if(document.activeElement.ariaExpanded === 'true'){
 				const submenu = document.activeElement.closest('li').querySelector('ul');
 				if (submenu) {
-					if(event.shiftKey){
+					if((event.keyCode == 9 && event.shiftKey) || event.keyCode === 37 || event.keyCode === 38) {
 						const lastItem = submenu.querySelector(':scope > li:last-child > a, :scope > li:last-child > button');
 						if (lastItem) {
 							event.preventDefault();
@@ -134,12 +135,12 @@ class A11yNav {
 		const firstItem = currentUL.previousElementSibling || items[0];
 		const lastItem = items[items.length - 1];
 
-		if (document.activeElement === lastItem && !event.shiftKey) {
+		if (document.activeElement === lastItem && ((event.keyCode == 9 && !event.shiftKey) || event.keyCode === 39 || event.keyCode === 40)) {
 			event.preventDefault();
 			firstItem?.focus();
 		}
 
-		if (document.activeElement === firstItem && event.shiftKey) {
+		if (document.activeElement === firstItem && ((event.keyCode == 9 && event.shiftKey) || event.keyCode === 37 || event.keyCode === 38)) {
 			event.preventDefault();
 			lastItem?.focus();
 		}
