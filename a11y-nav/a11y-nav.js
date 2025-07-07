@@ -135,6 +135,9 @@ class A11yNav {
 		const firstItem = currentUL.previousElementSibling || items[0];
 		const lastItem = items[items.length - 1];
 
+		if(firstItem.getComputedStyle('display') === 'none')
+			return
+
 		if (document.activeElement === lastItem && ((event.keyCode == 9 && !event.shiftKey) || event.keyCode === 39 || event.keyCode === 40)) {
 			event.preventDefault();
 			firstItem?.focus();
