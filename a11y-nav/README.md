@@ -1,3 +1,4 @@
+# Beschreibung zu a11y-nav - Barrierefreie Navigation
 Einfügen im Seitenlayout unter Eigener JavaScript-Code.
 
 ````
@@ -15,3 +16,4 @@ document.addEventListener('DOMContentLoaded', function() {
 ````
 
 die JS Datei `a11y-nav.js` über Externe JavaScripts hinzufügen
+die JS Datei `mobile-toggle.js` über Externe JavaScripts hinzufügen
