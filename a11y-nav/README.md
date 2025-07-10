@@ -14,4 +14,4 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 ````
 
-die JS Datei **a11y-nav.js** über Externe JavaScripts hinzufügen
+die JS Datei `a11y-nav.js` über Externe JavaScripts hinzufügen
