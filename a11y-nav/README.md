@@ -21,3 +21,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 Hinweis: Funktioniert derzeit nur wenn Level_2/3 .. über display:none augeblendet werden. 
+
+## Anpassungen
+
+- bei der letzten anpassung hat Lukas die Navigation mit dem Pfeiltasten links/rechts/oben/unten hinzugefügt.
+
